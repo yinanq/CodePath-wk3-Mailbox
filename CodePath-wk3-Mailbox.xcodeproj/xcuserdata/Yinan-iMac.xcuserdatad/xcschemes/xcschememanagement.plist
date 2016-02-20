@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CodePath-wk3-Mailbox.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E111C1CB1C792DC300C004FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E111C1DF1C792DC300C004FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E111C1EA1C792DC300C004FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
