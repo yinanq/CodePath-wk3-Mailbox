@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E107EB061C79616F002D207B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107EB051C79616F002D207B /* Common.swift */; };
 		E111C1D01C792DC300C004FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E111C1CF1C792DC300C004FE /* AppDelegate.swift */; };
 		E111C1D21C792DC300C004FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E111C1D11C792DC300C004FE /* ViewController.swift */; };
 		E111C1D51C792DC300C004FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E111C1D31C792DC300C004FE /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E107EB051C79616F002D207B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		E111C1CC1C792DC300C004FE /* CodePath-wk3-Mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodePath-wk3-Mailbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E111C1CF1C792DC300C004FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E111C1D11C792DC300C004FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		E111C1CE1C792DC300C004FE /* CodePath-wk3-Mailbox */ = {
 			isa = PBXGroup;
 			children = (
+				E107EB051C79616F002D207B /* Common.swift */,
 				E111C1CF1C792DC300C004FE /* AppDelegate.swift */,
 				E111C1D11C792DC300C004FE /* ViewController.swift */,
 				E111C1D31C792DC300C004FE /* Main.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E111C1D21C792DC300C004FE /* ViewController.swift in Sources */,
+				E107EB061C79616F002D207B /* Common.swift in Sources */,
 				E111C1D01C792DC300C004FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				E111C1F61C792DC300C004FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E111C1F71C792DC300C004FE /* Build configuration list for PBXNativeTarget "CodePath-wk3-MailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				E111C1F91C792DC300C004FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E111C1FA1C792DC300C004FE /* Build configuration list for PBXNativeTarget "CodePath-wk3-MailboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				E111C1FC1C792DC300C004FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
