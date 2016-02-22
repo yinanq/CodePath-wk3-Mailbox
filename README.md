@@ -1,4 +1,4 @@
-CodePath iOS for Designers class week2 assignment 
+CodePath iOS for Designers class week3 assignment 
 http://courses.codepath.com/courses/ios_for_designers/unit/3#!assignment
 
 Hours spent: 10
