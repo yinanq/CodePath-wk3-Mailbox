@@ -7,10 +7,6 @@ Stories completed:
 
 ![tiiip](https://raw.githubusercontent.com/yinanq/CodePath-wk3-Mailbox/master/storiesCompletedBy20160221.png)
 
-Optional stories:
-Tapping the segmented control in the title should swipe views in from the left or right.
-Shake to undo.
-
 GIF walkthrough (using LiceCap):
 
 ![tiiip](https://raw.githubusercontent.com/yinanq/CodePath-wk3-Mailbox/master/CodePath-wk3-Mailbox.gif)
