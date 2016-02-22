@@ -195,16 +195,57 @@ class ViewController: UIViewController {
         })
     }
     
+    // Optional: Shake to undo.
     // undo fake hiding animation, with messageView back to original state
-    @IBAction func feedImageTapGesture(sender: UITapGestureRecognizer) {
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         messageView.backgroundColor = mailboxGrey
         messageImageView.center.x = messageInitialX
         UIView.animateWithDuration(hideAnimationDuration, animations: {
-//            self.feedImageView.center.y += self.messageView.bounds.height
-//            let toprint = self.feedImageView.center.y
-//            print(toprint)
+            //            self.feedImageView.center.y += self.messageView.bounds.height
+            //            let toprint = self.feedImageView.center.y
+            //            print(toprint)
             self.feedImageView.center.y = 766
         })
+    }
+
+    // Optional: Tapping the segmented control in the title should swipe views in from the left or right.
+    @IBOutlet weak var laterScrollView: UIScrollView!
+    @IBOutlet weak var archiveScrollView: UIScrollView!
+    @IBOutlet weak var tabs: UISegmentedControl!
+    @IBAction func tabChanged(sender: UISegmentedControl) {
+        if tabs.selectedSegmentIndex == 0 {
+            tabs.tintColor = mailboxYellow
+            UIView.animateWithDuration(0.3, animations: {
+                self.laterScrollView.frame.origin.x = 0
+                self.feedScrollView.frame.origin.x = self.laterScrollView.frame.width
+                self.archiveScrollView.frame.origin.x = self.laterScrollView.frame.width + self.feedScrollView.frame.width
+            })
+        } else if tabs.selectedSegmentIndex == 1 {
+            tabs.tintColor = mailboxBlue
+            UIView.animateWithDuration(0.3, animations: {
+                self.laterScrollView.frame.origin.x = -self.laterScrollView.frame.width
+                self.feedScrollView.frame.origin.x = 0
+                self.archiveScrollView.frame.origin.x = self.feedScrollView.frame.width
+            })
+        } else if tabs.selectedSegmentIndex == 2 {
+            tabs.tintColor = mailboxGreen
+            UIView.animateWithDuration(0.3, animations: {
+                self.laterScrollView.frame.origin.x = -self.laterScrollView.frame.width + -self.feedScrollView.frame.width
+                self.feedScrollView.frame.origin.x = -self.feedScrollView.frame.width
+                self.archiveScrollView.frame.origin.x = 0
+            })
+        }
+    }
+    
+    //TODO:
+//    Optional: Panning from the edge should reveal the menu
+//        Optional: If the menu is being revealed when the user lifts their finger, it should continue revealing.
+//        Optional: If the menu is being hidden when the user lifts their finger, it should continue hiding.
+    @IBOutlet weak var allThingsInEdgePanView: UIView!
+    @IBAction func edgePanGesture(sender: UIScreenEdgePanGestureRecognizer) {
+        let leftEdge = UIRectEdge.Left.rawValue
+        allThingsInEdgePanView.frame.origin.x = CGFloat(leftEdge)
+        // doesn't work yet.
     }
     
 }
